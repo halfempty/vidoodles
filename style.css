@@ -1,5 +1,5 @@
 /*  
-Theme Name: Vidoodles
+Theme Name: Vidoodles 2
 Author: Marty
 
 font-family: "source-code-pro";
@@ -7,32 +7,39 @@ font-family: "source-sans-pro";
 
 */
 
+@font-face {
+	font-family: 'MetricWeb';
+	src: url('fonts/MetricWeb-Regular.eot?#iefix') format('embedded-opentype'), 
+	     url('fonts/MetricWeb-Regular.woff') format('woff'), 
+	     url('fonts/MetricWeb-Regular.ttf')  format('truetype'),
+	     url('fonts/MetricWeb-Regular.svg#svgFontName') format('svg');
+	}
+
+@font-face {
+	font-family: 'MetricWeb';
+	font-weight: bold;
+	src: url('fonts/MetricWeb-Semibold.eot?#iefix') format('embedded-opentype'), 
+	     url('fonts/MetricWeb-Semibold.woff') format('woff'), 
+	     url('fonts/MetricWeb-Semibold.ttf')  format('truetype'),
+	     url('fonts/MetricWeb-Semibold.svg#svgFontName') format('svg');
+	}
 
 
-body {font-family: "source-sans-pro", sans-serif; background: #333; color: #fff; margin: 0; padding: 0; font-size: 14px;}
-a {color: #fff; 
+body {font-family: "MetricWeb", sans-serif;  -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; background: #00AEEF; color: #fff; margin: 0; padding: 0; font-size: 21px;}
+a {color: #fff; text-decoration: none;
 	-webkit-transition: color 0.2s ease;
 	-moz-transition: color 0.2s ease;
 	-o-transition: color 0.2s ease;
 	transition: color 0.2s ease;
 	}
+a:hover { border-bottom: 2px solid #fff; }
 
-a:hover {color: yellow}
-	
-h1 {text-transform: uppercase; font-size: 14px; float: left; background: #000; margin: 0; padding: .5em 1em; line-height: 14px;}
-h2 {font-family: "source-code-pro", monospace; font-size: 14px; float: left; margin: 0; padding: .5em 1em;  line-height: 14px;}
-
-#page {}
-
-#header { z-index: 9999; overflow: hidden; position: absolute; width: 100%;}
-#header .title {background: rgba(0,0,0,0.3); float: left; overflow: hidden; }
-#header .guestbook {background: rgba(0,0,0,0.3); float: right; margin: 0; padding: .5em 1em;  line-height: 14px;}
-
-#header .next, #header .previous {background: rgba(0,0,0,0.3); float: right; margin: 0; padding: .5em 1em;  line-height: 14px; border-right: 1px solid rgba(255,255,255,0.3);}
+h1 {font-size: 36px; font-weight: normal; margin: 0; }
+h2 {font-size: 36px; font-weight: normal; margin: 0; opacity: .66; }
+h3 {font-size: 28px; font-weight: normal; margin: 0 0 3em 0 ; }
 
 
-#header a {text-decoration: none;}
+.page { padding: 2em; background: #00AEEF;}
 
-#content {position: relative; margin: auto; }
-	
-.text { clear: both; padding: 3em 1em 1em 1em;}
+.shadow {margin: auto; box-shadow: 0px 3px 20px rgba(0,0,0,0.5); display: inline-block; margin: 2em 0 1em 0; }
+

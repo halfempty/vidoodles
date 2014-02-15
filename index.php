@@ -5,11 +5,13 @@
 
 			<?php if ( is_page('guestbook') ) : ?>
 				<div class="text">
-				<?php the_content(); ?>
-				<?php comments_template(); ?>
+					<?php the_content(); ?>
+					<?php comments_template(); ?>
 				</div>
-			<?php elseif ( is_front_page() ) : 
 
+			<?php elseif ( is_front_page() ) : ?>
+
+				<?php 
 				$kickingaroundid = get_ID_by_slug('kicking-around'); 
 
 				$args = array(
@@ -19,16 +21,19 @@
 					'post_type' => 'page',
 					'post_status' => 'publish'
 				); 
-				$pages = get_pages($args); 
-
-				 makeVideo($pages[0]->ID,true); 
+				$pages = get_pages($args); ?>
 				
-				wp_reset_query();
+				<div class="shadow">
+					<?php makeVideo($pages[0]->ID,true); ?>
+				</div>
 
-			else : 
-					 makeVideo("$post->ID",true); 
-			endif; 
- ?>
+				<?php wp_reset_query(); ?>
+
+			<?php else : ?>
+				 <div class="shadow">
+					<?php makeVideo("$post->ID",true); ?>
+				</div>
+			<?php endif; ?>
 
 		<?php endwhile; ?>
 	<?php else : ?>
