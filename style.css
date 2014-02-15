@@ -1,0 +1,38 @@
+/*  
+Theme Name: Vidoodles
+Author: Marty
+
+font-family: "source-code-pro";
+font-family: "source-sans-pro";
+
+*/
+
+
+
+body {font-family: "source-sans-pro", sans-serif; background: #333; color: #fff; margin: 0; padding: 0; font-size: 14px;}
+a {color: #fff; 
+	-webkit-transition: color 0.2s ease;
+	-moz-transition: color 0.2s ease;
+	-o-transition: color 0.2s ease;
+	transition: color 0.2s ease;
+	}
+
+a:hover {color: yellow}
+	
+h1 {text-transform: uppercase; font-size: 14px; float: left; background: #000; margin: 0; padding: .5em 1em; line-height: 14px;}
+h2 {font-family: "source-code-pro", monospace; font-size: 14px; float: left; margin: 0; padding: .5em 1em;  line-height: 14px;}
+
+#page {}
+
+#header { z-index: 9999; overflow: hidden; position: absolute; width: 100%;}
+#header .title {background: rgba(0,0,0,0.3); float: left; overflow: hidden; }
+#header .guestbook {background: rgba(0,0,0,0.3); float: right; margin: 0; padding: .5em 1em;  line-height: 14px;}
+
+#header .next, #header .previous {background: rgba(0,0,0,0.3); float: right; margin: 0; padding: .5em 1em;  line-height: 14px; border-right: 1px solid rgba(255,255,255,0.3);}
+
+
+#header a {text-decoration: none;}
+
+#content {position: relative; margin: auto; }
+	
+.text { clear: both; padding: 3em 1em 1em 1em;}
